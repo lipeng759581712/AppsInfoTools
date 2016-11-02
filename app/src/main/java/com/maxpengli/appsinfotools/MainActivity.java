@@ -27,6 +27,7 @@ public class MainActivity extends Activity{
         listPackages();
         SimpleAdapter adapter = new SimpleAdapter(this, data,android.R.layout.simple_list_item_2, new String[] { "appname","pname" }, new int[] { android.R.id.text1,android.R.id.text2, });
         listView.setAdapter(adapter);
+
         setContentView(listView);
     }
     class PInfo {
